@@ -1,0 +1,81 @@
+.container-main{
+    padding: 2rem;
+}
+.contact {
+    color: $color-2;
+    position: absolute;
+    top: 2rem;
+    right: calc(1rem + 2vw);
+    text-decoration: none;
+    z-index: 1;
+}
+.blog{
+    color: $color-2;
+    position: absolute;
+    top: 50%;
+    right: calc(1rem + 2vw);
+    text-decoration: none;
+    transform: rotate(90deg) translate(-50%, -50%);
+    z-index: 1;
+}
+.work{
+    color: $color-2;
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    text-decoration: none;
+    transform: rotate(-90deg) translate(0, -50%);
+    z-index: 1;
+}
+.bottom-bar{
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about{
+    color: $color-2;
+    text-decoration: none;
+    z-index: 1;
+}
+.skills{
+    color: $color-2;
+    text-decoration: none;
+    z-index: 1;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span{
+        padding-top: 1rem;
+        font-family: $font-2;
+        font-weight: bold;
+    }
+}
+.yingyang{
+    height: 200px;
+    width: 200px;
+    animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

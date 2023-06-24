@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "font-1";
+    src: url(../assets/font/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "font-2";
+    src: url(../assets/font/Lato-Regular.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+$font-2: "font-2", sans-serif;
+
+$color-1:#FCF6F4;
+$color-2:#000000;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    display: inline block;
+}
+
+body{
+    overflow-x:hidden
+    font-family 'Source Sans Pro', sans-serif
+}
+
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

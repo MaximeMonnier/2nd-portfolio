@@ -1,0 +1,14 @@
+.logo{
+    display: inline-block;
+    color: $color-2;
+    font-family: $font-1;
+    background: url(../../assets/Images/m&m.png);
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    left: 2rem;
+    top: 10px;
+    z-index: 3;
+}

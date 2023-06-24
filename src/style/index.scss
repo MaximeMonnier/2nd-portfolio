@@ -1,0 +1,14 @@
+// param
+@import "./settings";
+//theme light dark
+@import "./theme";
+// pages
+@import "./pages/main";
+@import "./pages/about";
+@import "./pages/blog";
+@import "./pages/skill";
+@import "./pages/work";
+//components
+@import "./components/powerbtn";
+@import "./components/logocomponent";
+@import "./components/socialcons";
