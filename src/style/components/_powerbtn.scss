@@ -10,6 +10,7 @@
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
+    z-index: 5;
 
     &:hover{
         background-color: red;

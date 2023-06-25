@@ -1,9 +1,9 @@
 import React from "react";
 
-const LogoComponent = () => {
+const LogoComponent = ({ clickying }) => {
   return (
-    <div className="logo">
-      <h1></h1>
+    <div className={clickying ? "logoActive" : "logo"}>
+      <h1>M&M</h1>
     </div>
   );
 };

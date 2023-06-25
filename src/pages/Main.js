@@ -14,11 +14,13 @@ const Main = () => {
   return (
     <div className="lighttheme">
       <div className="container-main">
-        <PowerButton />
-        <LogoComponent />
-        <SocialCons />
+        <div className={ClickYing ? "darktheme" : "darkthemeNone"}>
+          <PowerButton />
+          <LogoComponent clickying={ClickYing} />
+          <SocialCons clickying={ClickYing} />
+        </div>
 
-        <div className="center">
+        <div className={ClickYing ? "centerActive" : "center"}>
           <div>
             <svg
               onClick={handelClick}
@@ -26,7 +28,11 @@ const Main = () => {
               focusable="false"
               data-prefix="fas"
               data-icon="yin-yang"
-              className="svg-inline--fa fa-yin-yang fa-w-16 yingyang"
+              className={
+                ClickYing
+                  ? "svg-inline--fa fa-yin-yang fa-w-16 yingyangActive"
+                  : "svg-inline--fa fa-yin-yang fa-w-16 yingyang"
+              }
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
@@ -37,7 +43,9 @@ const Main = () => {
               ></path>
             </svg>
           </div>
-          <span>Click Here</span>
+          <span className={ClickYing ? "textyingActive" : "textying"}>
+            Click Here
+          </span>
         </div>
 
         <NavLink to="/contact">
@@ -47,11 +55,11 @@ const Main = () => {
           <h2 className="blog">Blog</h2>
         </NavLink>
         <NavLink to="/work">
-          <h2 className="work">Work</h2>
+          <h2 className={ClickYing ? "workActive" : "work"}>Work</h2>
         </NavLink>
         <div className="bottom-bar">
           <NavLink to="/about">
-            <h2 className="about">About</h2>
+            <h2 className={ClickYing ? "aboutActive" : "about"}>About</h2>
           </NavLink>
           <NavLink to="/skills">
             <h2 className="skills">Skills</h2>
