@@ -1,0 +1,31 @@
+.container-blog-main{
+    background-image: url(../../assets/Images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+
+    .container-blog-sec{
+        background-color: $color-1;
+        opacity: 0.7;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        padding-bottom: 5rem;
+
+        .center-blog{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10rem;
+        }
+
+        .grid-blog{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
+            grid-gap: calc(1rem + 2vw);
+        }
+    }
+
+
+}
