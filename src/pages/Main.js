@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import PowerButton from "../components/PowerButton";
 import LogoComponent from "../components/LogoComponent";
 import SocialCons from "../components/SocialCons";
 import { NavLink } from "react-router-dom";
+import Intro from "../components/Intro";
 
 const Main = () => {
   const [ClickYing, setClickYing] = useState(false);
@@ -49,23 +51,59 @@ const Main = () => {
         </div>
 
         <NavLink to="/contact">
-          <h2 className="contact">Say hi...</h2>
+          <motion.h2
+            className="contact"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            Say hi...
+          </motion.h2>
         </NavLink>
         <NavLink to="/blog">
-          <h2 className="blog">Blog</h2>
+          <motion.h2
+            className="blog"
+            initial={{ rotate: "90deg" }}
+            animate={{ rotate: "90deg" }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            ro
+          >
+            Blog
+          </motion.h2>
         </NavLink>
         <NavLink to="/work">
-          <h2 className={ClickYing ? "workActive" : "work"}>Work</h2>
+          <motion.h2
+            className={ClickYing ? "workActive" : "work"}
+            initial={{ rotate: "-90deg" }}
+            animate={{ rotate: "-90deg" }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            Work
+          </motion.h2>
         </NavLink>
         <div className="bottom-bar">
           <NavLink to="/about">
-            <h2 className={ClickYing ? "aboutActive" : "about"}>About</h2>
+            <motion.h2
+              className={ClickYing ? "aboutActive" : "about"}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              About
+            </motion.h2>
           </NavLink>
           <NavLink to="/skills">
-            <h2 className="skills">Skills</h2>
+            <motion.h2
+              className="skills"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Skills
+            </motion.h2>
           </NavLink>
         </div>
       </div>
+      {ClickYing ? <Intro /> : null}
     </div>
   );
 };
