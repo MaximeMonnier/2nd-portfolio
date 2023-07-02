@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Aimg from "../assets/Images/iphone14.png";
 
 const Blog = ({ article }) => {
-  console.log(article);
+  // console.log(article);
   return (
     <div>
       <NavLink to={article.link} target="_blank" className="article-container">
