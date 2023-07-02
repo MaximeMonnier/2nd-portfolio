@@ -1,6 +1,70 @@
 .article-container{
-    width: calc(10rem + 15vw);
+    width: calc(11rem + 16vw);
     text-decoration: none;
-    height: 20rem;
+    height: 24rem;
     padding: 1rem;
+    display: flex;
+    justify-content: center;
+    border: 2px solid $color-2;
+    border-radius: 5px;
+    scale: 1;
+    transition: all 0.4s;
+    .card {
+
+        img{
+            background-image: url(../../assets/Images/iphone14.png);
+            width: 100%;
+            height: 60%;
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 1px solid $color-2;
+        }
+        h3{
+            min-height: 50px;
+            font-family: $font-2;
+            padding-bottom: 10px;
+        }
+        .article-bar {
+            background-color: $color-2;
+            width: 100%;
+            height: 2px;
+            margin-bottom: 7px;
+            
+        }
+        .tags {
+            display: flex;
+        }
+        p{
+            min-height: 50px;
+            font-family: $font-2;
+            padding-bottom: 5px;
+        }
+
+    }
+}
+.article-container:hover{
+    background-color: $color-2;
+    scale: 1.1;
+    transition: all 0.4s;
+
+    .card{
+        img{
+            border: 1px solid $color-1;
+            transition: all 0.5s;
+        }
+        h3{
+            color: $color-1;
+            transition: all 0.5s;
+        }
+        .article-bar{
+            background-color: $color-1;
+            transition: all 0.5s;
+        }
+        p{
+            color: $color-1;
+            transition: all 0.5s;
+        }
+    }
 }
