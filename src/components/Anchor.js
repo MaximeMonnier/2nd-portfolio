@@ -43,7 +43,7 @@ const Anchor = () => {
             focusable="false"
             data-prefix="fas"
             data-icon="anchor"
-            class="svg-inline--fa fa-anchor fa-w-18"
+            className="svg-inline--fa fa-anchor fa-w-18"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 576 512"
@@ -56,11 +56,10 @@ const Anchor = () => {
         </span>
       </div>
       <div className="slider" ref={ref}>
-        {[...Array(25)].map((x, id) => {
+        {[...Array(27)].map((index, id) => {
           return (
-            <span>
+            <span key={index}>
               <svg
-                className="chain"
                 key={id}
                 width={25}
                 hanging={25}
@@ -68,7 +67,7 @@ const Anchor = () => {
                 focusable="false"
                 data-prefix="fas"
                 data-icon="link"
-                class="svg-inline--fa fa-link fa-w-16"
+                className="svg-inline--fa fa-link fa-w-16 chain"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -89,7 +88,7 @@ const Anchor = () => {
             focusable="false"
             data-prefix="fas"
             data-icon="anchor"
-            class="svg-inline--fa fa-anchor fa-w-18"
+            className="svg-inline--fa fa-anchor fa-w-18"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 576 512"

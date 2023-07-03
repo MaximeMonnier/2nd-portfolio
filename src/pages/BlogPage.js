@@ -14,6 +14,7 @@ const BlogPage = () => {
         <PowerButton />
         <SocialCons />
         <Anchor />
+
         <div className="center-blog">
           <div className="grid-blog">
             {Blogs.map((article) => {
