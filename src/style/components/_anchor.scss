@@ -1,8 +1,22 @@
 .container-anchor {
     position: relative;
 
-    .slder{
+    .slider{
         position: fixed;
+        top: 0;
+        right: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-100%);
+
+        .chain{
+            transform: rotate(135deg);
+        }
+
+    }
+    .hidden {
+        position: absolute;
         top: 0;
         right: 2rem;
     }
