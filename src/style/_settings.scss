@@ -6,9 +6,14 @@
     font-family: "font-2";
     src: url(../assets/font/Lato-Regular.ttf);
 }
+@font-face {
+    font-family: "font-3";
+    src: url(../assets/font/UbuntuMono-R.ttf);
+}
 
 $font-1: "font-1", sans-serif;
 $font-2: "font-2", sans-serif;
+$font-3: "font-3", sans-serif;
 
 $color-1:#FCF6F4;
 $color-2:#000000;
@@ -29,9 +34,6 @@ body{
     font-family 'Source Sans Pro', sans-serif
 }
 
-li {
-    list-style: none;
-}
 a{
     text-decoration: none;
     color: inherit;
