@@ -2,16 +2,16 @@ import React from "react";
 import PowerButton from "../components/PowerButton";
 import SocialCons from "../components/SocialCons";
 import LogoComponent from "../components/LogoComponent";
-import Particle from "../components/Particle";
+import ParticleComponent from "../components/ParticleComponent";
 
 const MysSkillPage = () => {
   return (
     <div>
       <div className="container-skills">
+        <ParticleComponent />
         <SocialCons />
         <PowerButton />
         <LogoComponent />
-        <Particle />
         <div className="box-skills">
           <div className="main-skills">
             <div className="title-skills">
@@ -23,7 +23,7 @@ const MysSkillPage = () => {
                   focusable="false"
                   data-prefix="fas"
                   data-icon="palette"
-                  class="svg-inline--fa fa-palette fa-w-16"
+                  className="svg-inline--fa fa-palette fa-w-16"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -66,7 +66,7 @@ const MysSkillPage = () => {
                   focusable="false"
                   data-prefix="fas"
                   data-icon="laptop-code"
-                  class="svg-inline--fa fa-laptop-code fa-w-20"
+                  className="svg-inline--fa fa-laptop-code fa-w-20"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 512"
