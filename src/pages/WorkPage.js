@@ -1,11 +1,15 @@
 import React from "react";
-import Particle from "../components/ParticleComponent";
+import ParticlesComponent from "../components/ParticlesComponent";
 
 const WorkPage = () => {
   return (
     <div>
-      <div>WorkPage Component/page</div>
-      <Particle />
+      <div className="text">
+        <p>work page/potfolio</p>
+      </div>
+      <div className="particle">
+        <ParticlesComponent />
+      </div>
     </div>
   );
 };

@@ -2,16 +2,16 @@ import React from "react";
 import PowerButton from "../components/PowerButton";
 import SocialCons from "../components/SocialCons";
 import LogoComponent from "../components/LogoComponent";
-import ParticleComponent from "../components/ParticleComponent";
+import ParticlesComponent from "../components/ParticlesComponent";
 
 const MysSkillPage = () => {
   return (
     <div>
       <div className="container-skills">
-        <ParticleComponent />
         <SocialCons />
         <PowerButton />
         <LogoComponent />
+        <ParticlesComponent />
         <div className="box-skills">
           <div className="main-skills">
             <div className="title-skills">

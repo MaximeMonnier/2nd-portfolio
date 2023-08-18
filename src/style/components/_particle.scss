@@ -1,8 +1,9 @@
-#tsparticles {
-    position: fixed;
+.particles-container {
+    position: absolute; /* ou relative en fonction de votre mise en page */
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: -1;
+    width: 100%; /* ou la largeur souhaitée */
+    height: 100%; /* ou la hauteur souhaitée */
+    z-index: -1; /* Placez-le en arrière-plan */
   }
   
