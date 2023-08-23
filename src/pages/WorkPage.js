@@ -1,17 +1,25 @@
 import React from "react";
-import ParticlesComponent from "../components/ParticlesComponent";
+import PowerButton from "../components/PowerButton";
+import SocialConsD from "../components/SocialConsD";
+import LogoComponentD from "../components/LogoComponentD";
+import { Work } from "../data/WorkData";
+import Card from "../components/Card";
 
-const WorkPage = () => {
+const AboutPage = () => {
   return (
     <div>
-      <div className="text">
-        <p>work page/potfolio</p>
-      </div>
-      <div className="particle">
-        <ParticlesComponent />
+      <div className="container-work">
+        <SocialConsD />
+        <PowerButton />
+        <LogoComponentD />
+        <div className="container-card">
+          {Work.map((d) => {
+            return <Card key={d.id} data={d} />;
+          })}
+        </div>
       </div>
     </div>
   );
 };
 
-export default WorkPage;
+export default AboutPage;

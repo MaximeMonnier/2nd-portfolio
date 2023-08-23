@@ -5,6 +5,7 @@ import LogoComponent from "../components/LogoComponent";
 import SocialCons from "../components/SocialCons";
 import { NavLink } from "react-router-dom";
 import Intro from "../components/Intro";
+import ParticlesAbsorber from "../components/ParticlesAbsorber";
 
 const Main = () => {
   const [ClickYing, setClickYing] = useState(false);
@@ -20,6 +21,7 @@ const Main = () => {
           <PowerButton />
           <LogoComponent clickying={ClickYing} />
           <SocialCons clickying={ClickYing} />
+          <ParticlesAbsorber />
         </div>
 
         <div className={ClickYing ? "centerActive" : "center"}>
